@@ -6,7 +6,7 @@
 ![license](https://img.shields.io/github/license/salmanzafar949/laravel-api-exceptions-handler)
 [![Total Downloads](https://img.shields.io/packagist/dt/salmanzafar/laravel-api-exceptions-handler?style=flat-square)](https://packagist.org/packages/salmanzafar/laravel-jwt-auto-installer)
 
-It's a Laravel package that makes it easy to handle and customize api exceptions and responses and also support for model uuid
+A Laravel package that makes it easy to handle and customize api exceptions and responses and also support for model uuid
 
 ## Table of contents
 * [Installation](#installation)
