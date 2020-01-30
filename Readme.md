@@ -17,13 +17,13 @@ A Laravel package that makes it easy to handle and customize api exceptions and 
 * [Publishing files / configurations](#publishing-files)
 
 
-#Installation
+# Installation
 
 ```bash
 composer require salmanzafar/laravel-api-exceptions-handler --dev
 ```
 
-##Configuration (optional)
+## Configuration (optional)
 Publishing service provider
 
 ```bash
