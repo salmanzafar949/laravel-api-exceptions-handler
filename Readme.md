@@ -10,6 +10,7 @@ A Laravel package that makes it easy to handle and customize api exceptions and 
 
 ## Table of contents
 * [Installation](#installation)
+* [Configuration](#configuration)
 * [Api Exceptions](#api-exceptions)
 * [Custom Api Responses](#custom-api-responses)
 * [Model Uuid](#model-uuid)
@@ -17,9 +18,18 @@ A Laravel package that makes it easy to handle and customize api exceptions and 
 
 
 #Installation
+
 ```bash
 composer require salmanzafar/laravel-api-exceptions-handler --dev
 ```
+
+##Configuration (optional)
+Publishing service provider
+
+```bash
+php artisan vendor:publish --provider="Salman\ApiExceptionHandler\ApiExceptionHandlerServiceProvider::class"
+```
+
 ## Enable the package (Optional)
 This package implements Laravel auto-discovery feature. After you install it the package provider and facade are added automatically for laravel >= 5.5.
 
