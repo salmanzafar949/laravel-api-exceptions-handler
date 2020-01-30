@@ -3,6 +3,7 @@
 namespace Salman\ApiExceptionHandler\Commands;
 
 use Illuminate\Console\Command;
+use Salman\ApiExceptionHandler\Services\PublishTraitsService;
 
 class PublishTraits extends Command
 {
@@ -37,6 +38,13 @@ class PublishTraits extends Command
      */
     public function handle()
     {
-        $this->info('All files have been published');
+        $check = PublishTraitsService::publishTraits();
+
+        if ($check)
+        {
+            $this->info('All files have been published');
+        }
+
+        $this->info('Failed to publish');
     }
 }

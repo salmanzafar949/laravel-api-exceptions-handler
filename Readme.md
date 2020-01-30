@@ -245,8 +245,10 @@ class CreateCarsTable extends Migration
 ```
 
 ### Publishing files
-The below command will publish every thing inside `App\Concerns` folder
+The below command will publish all related files inside `App\Concerns` folder
 
-```php artisan publish:traits```
+```bash
+php artisan publish:traits
+```
 
 ### Tested on php 7.4 and laravel 6^
