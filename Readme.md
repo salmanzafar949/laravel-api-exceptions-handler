@@ -10,7 +10,7 @@ A Laravel package that makes it easy to handle and customize api exceptions and 
 
 ## Table of contents
 * [Installation](#installation)
-* [Configuration](#configuration-(optional))
+* [Configuration](#configuration-optional)
 * [Api Exceptions](#api-exceptions)
 * [Custom Api Responses](#custom-api-responses)
 * [Model Uuid](#model-uuid)
