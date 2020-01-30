@@ -11,8 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0.0",
-        "tymon/jwt-auth": "^1.0.0-rc.5"
+        "php": ">=7.0.0"
     },
     "require-dev": {
         "laravel/framework": ">=5.5"
@@ -20,17 +19,14 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Salman\\ModelUUID\\": "src/"
+            "Salman\\ApiExceptionHandler\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Salman\\ModelUUID\\ModelUUIDServiceProvider"
-            ],
-            "aliases": {
-                "AutoJWT": "Salman\\ModelUUID\\Facades\\ModelUUID"
-            }
+                "Salman\\ApiExceptionHandler\\ApiExceptionHandlerServiceProvider"
+            ]
         }
     }
 }
