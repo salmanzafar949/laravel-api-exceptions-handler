@@ -20,7 +20,7 @@ trait ExceptionTrait {
     {
         if($this->IsModel($exception))
         {
-            return $this->ModelResponse();
+            return $this->ModelResponse($exception);
         }
 
         if($this->IsHttp($exception))
@@ -46,10 +46,10 @@ trait ExceptionTrait {
         return $exception instanceof ModelNotFoundException;
     }
 
-    protected function ModelResponse()
+    protected function ModelResponse($exception)
     {
         return response()->json([
-            "error" => "Model Not found"
+            "error" => "Model Not found {$exception->getModel()}"
         ],Response::HTTP_NOT_FOUND);
     }
 
