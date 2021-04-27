@@ -48,8 +48,10 @@ trait ExceptionTrait {
 
     protected function ModelResponse($exception)
     {
+        $resp = str_replace('App\\Model\\', '', $exception->getModel());
+
         return response()->json([
-            "error" => "Model Not found {$exception->getModel()}"
+            "error" => "Model {$resp} Not found"
         ],Response::HTTP_NOT_FOUND);
     }
 

@@ -11,10 +11,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.3.0"
     },
     "require-dev": {
-        "laravel/framework": ">=5.5"
+        "laravel/framework": ">=8.0"
     },
     "prefer-stable": true,
     "autoload": {
